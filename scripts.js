@@ -126,7 +126,7 @@ const Utils = { // estilizando as entradas e saida com R$ e , arrumando a moeda
 
     formatAmount(value) {
         // value = Number(value.replace(/\,\./g, "")) * 100  <-- use esse se der erro
-        value = Number(value) * 100
+         value = Number(value.replace(/\,\./g, "")) * 100
 
         return value
     },
